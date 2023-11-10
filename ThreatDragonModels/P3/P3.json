@@ -2839,7 +2839,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Alternative A",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
