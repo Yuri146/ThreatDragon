@@ -1662,7 +1662,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "(Denial of Service) Der Angreifer kann im Header des Emails virusenthaltige Dateien mitsenden und Manager kann die ungewollt ausführen\nCAPEC-134",
+                  "description": "(Denial of Service) Der Angreifer kann im Header des Emails virusenthaltige Dateien mitsenden und Manager kann die ungewollt ausführen\nCAPEC-134\nT-1659",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1684,11 +1684,7 @@
             "vertices": [
               {
                 "x": 3464.5,
-                "y": 60
-              },
-              {
-                "x": 3240,
-                "y": -50
+                "y": 30
               }
             ]
           },
@@ -1785,7 +1781,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "(Kategorie Tampering) XML Injection um Logs zu manipulieren.\nCAPEC-250",
+                  "description": "(Kategorie Tampering) XML Injection um Logs zu manipulieren.\nCAPEC-250\nT-1659",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1805,46 +1801,6 @@
               "log(login, phone, ott)"
             ],
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "bf244334-f764-4591-a693-e5ba34a9241e",
-            "source": {
-              "cell": "55e4a23d-a5d7-47e5-826b-2b279aa405b1"
-            },
-            "target": {
-              "x": 3320,
-              "y": 50
-            }
           },
           {
             "position": {
@@ -2040,7 +1996,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "(Kategorie EoP) Injection and execution of OS commands to elevate privileges.\nCAPEC-88",
+                  "description": "(Kategorie EoP) Injection and execution of OS commands to elevate privileges.\nCAPEC-88\nT-1574",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2103,7 +2059,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "(Kategorie Repudiaion) Injection von unbefügten log Einträgen. \nCAPEC-240",
+                  "description": "(Kategorie Repudiaion) Injection von unbefügten log Einträgen. \nCAPEC-240\nT-1659",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2601,7 +2557,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "(Spoofing) Ein Benutzer wird nicht zur richtige Seite geschickt, sondern zu fake Seite, die genau so aussieht wie die richtige\nCAPEC-89  ",
+                  "description": "(Spoofing) Ein Benutzer wird nicht zur richtige Seite geschickt, sondern zu fake Seite, die genau so aussieht wie die richtige\nCAPEC-89  \nT-1589",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2899,7 +2855,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "(Kategorie Infomaion Disclosure) Ein Angreifer kann die Kommunikation zwischen 2FA und Telco auslesen und Telefonnummer mibekommen. \nCAPEC-94",
+                  "description": "(Kategorie Infomaion Disclosure) Ein Angreifer kann die Kommunikation zwischen 2FA und Telco auslesen und Telefonnummer mibekommen. \nCAPEC-94\nT-1040",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2918,12 +2874,7 @@
             "target": {
               "cell": "55e4a23d-a5d7-47e5-826b-2b279aa405b1"
             },
-            "vertices": [
-              {
-                "x": 3460,
-                "y": 210
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
