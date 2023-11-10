@@ -4156,8 +4156,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -4180,22 +4179,8 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "4183f4df-1072-4d33-ac20-42e2ee7132b7",
-                  "title": "XML Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Kategorie Tampering) XML Injection um Logs zu manipulieren.\nCAPEC-250\nT-1659\nDREAD: (10 10 5 10 9)=9",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 9,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
             "id": "fdeb500e-c391-4dd5-8d73-efc150fdb244",
             "labels": [
