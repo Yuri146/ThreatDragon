@@ -1720,6 +1720,9 @@
               "threats": []
             },
             "id": "13efa577-0505-4b01-8eda-9fbd930f4e67",
+            "labels": [
+              "OTT"
+            ],
             "source": {
               "cell": "544ee6b6-5698-4bb6-a0c3-4375848f3961"
             },
@@ -1739,9 +1742,6 @@
                 "x": 2890,
                 "y": 790
               }
-            ],
-            "labels": [
-              "OTT"
             ]
           },
           {
@@ -1791,15 +1791,15 @@
               ]
             },
             "id": "515fb213-e474-487b-a4e0-612aca68d345",
+            "labels": [
+              "log(login, phone, ott)"
+            ],
             "source": {
               "cell": "55e4a23d-a5d7-47e5-826b-2b279aa405b1"
             },
             "target": {
               "cell": "581470e2-3682-46bd-b0ad-35530ce56248"
             },
-            "labels": [
-              "log(login, phone, ott)"
-            ],
             "vertices": []
           },
           {
