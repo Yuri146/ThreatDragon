@@ -1629,7 +1629,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1653,8 +1654,22 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "51951774-e655-47e9-b098-42e8caab53d3",
+                  "title": "Email Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "(Denial of Service) Der Angreifer kann im Header des Emails virusenthaltige Dateien mitsenden und Manager kann die ungewollt ausführen\nCAPEC-134",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ]
             },
             "id": "b0d95238-ce39-4b05-80b8-2c0e243eb8ba",
             "labels": [
@@ -1668,12 +1683,8 @@
             },
             "vertices": [
               {
-                "x": 3500,
-                "y": 260
-              },
-              {
-                "x": 3400,
-                "y": 80
+                "x": 3464.5,
+                "y": 60
               },
               {
                 "x": 3240,
@@ -1792,7 +1803,48 @@
             },
             "labels": [
               "log(login, phone, ott)"
-            ]
+            ],
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "bf244334-f764-4591-a693-e5ba34a9241e",
+            "source": {
+              "cell": "55e4a23d-a5d7-47e5-826b-2b279aa405b1"
+            },
+            "target": {
+              "x": 3320,
+              "y": 50
+            }
           },
           {
             "position": {
@@ -2019,11 +2071,13 @@
                 "text": "log DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2032,7 +2086,7 @@
             "zIndex": 41,
             "id": "581470e2-3682-46bd-b0ad-35530ce56248",
             "data": {
-              "type": "tm.Store",
+              "type": "tm.Flow",
               "name": "log DB",
               "description": "",
               "outOfScope": false,
@@ -2041,8 +2095,22 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "e61db201-ca04-4dfc-8dbd-314676bfae9b",
+                  "title": "Resource Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "(Kategorie Repudiaion) Injection von unbefügten log Einträgen. \nCAPEC-240",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isPublicNetwork": false,
@@ -2478,7 +2546,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2494,7 +2562,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "(Kathegotie Spoofing) Ein fremder Benutzer logt sich mit Daten anderes Benutzers ein.\nCAPEC-151 ",
+                  "description": "(Kathegotie Spoofing) Ein fremder Benutzer logt sich mit Daten anderes Benutzers ein.\nCAPEC-151 \nT-1598",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2507,11 +2575,37 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "(Kategorie DoS) Große Menge an TCP Pakete an Server senden.\nCEPEC-482",
+                  "description": "(Kategorie DoS) Große Menge an TCP Pakete an Server senden.\nCEPEC-482\nT-1499.002",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "82386a60-6129-45f6-af21-719981334cc3",
+                  "title": "Common Login and Passwords",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "(Spoofing) Try Common or Default Usernames and Passwords\nCAPEC-70\nT-1078",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "da49c88f-d223-4f71-9b56-261f1b39fd34",
+                  "title": "Pharming",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "(Spoofing) Ein Benutzer wird nicht zur richtige Seite geschickt, sondern zu fake Seite, die genau so aussieht wie die richtige\nCAPEC-89  ",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
                   "score": ""
                 }
               ]
@@ -2526,16 +2620,7 @@
             "target": {
               "cell": "3b2d28be-8fca-4044-bc03-1b39c66a384c"
             },
-            "vertices": [
-              {
-                "x": 2870,
-                "y": 300
-              },
-              {
-                "x": 2930,
-                "y": 290
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -2781,7 +2866,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2805,8 +2891,22 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "eef2b6cb-aaf5-4f9c-86f7-c39c81a8ff8d",
+                  "title": "Man In the Middle",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "(Kategorie Infomaion Disclosure) Ein Angreifer kann die Kommunikation zwischen 2FA und Telco auslesen und Telefonnummer mibekommen. \nCAPEC-94",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ]
             },
             "id": "0eca1903-4d7d-4672-8b83-9b1bb2c22227",
             "labels": [
@@ -2819,10 +2919,6 @@
               "cell": "55e4a23d-a5d7-47e5-826b-2b279aa405b1"
             },
             "vertices": [
-              {
-                "x": 3547,
-                "y": 168
-              },
               {
                 "x": 3460,
                 "y": 210
@@ -2960,7 +3056,7 @@
           },
           {
             "position": {
-              "x": 3090,
+              "x": 3096.99999999999,
               "y": -265
             },
             "size": {
@@ -2972,8 +3068,8 @@
                 "text": "Management"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2988,8 +3084,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "3dadb9d7-2228-473f-819d-d62d18bb548c",
+                  "title": "Phishing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "(Spoofing) Der Manager kann unvertrauliche Emails erhalten und eventuell seine Daten sehlen lassen.\nCAPEC-98\nT-1598",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -3074,6 +3184,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 9
+    "threatTop": 17
   }
 }
