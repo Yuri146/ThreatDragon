@@ -3999,20 +3999,20 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Modellieren",
+              "name": "Antwort",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
+              "protocol": "AES",
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "hasOpenThreats": false,
               "threats": []
             },
             "id": "5feb945a-2c1e-401f-9ab6-a6880b72a125",
             "labels": [
-              "Einzige Alternative"
+              "Antwort"
             ],
             "source": {
               "cell": "0aa30f73-eb6e-4765-a6db-ab01497d3be6"
