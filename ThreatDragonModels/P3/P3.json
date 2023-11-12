@@ -1803,6 +1803,176 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Speichern von Emails",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "5952ae24-af61-42b3-9385-63f4b1d5e90b",
+            "source": {
+              "cell": "d4ed4b6f-ddba-4c61-8fba-561a62b06699"
+            },
+            "target": {
+              "cell": "df3edef1-ce74-4fac-86c3-eea71be5118f"
+            },
+            "vertices": [],
+            "labels": [
+              "Speichern von Emails"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Weiterleitung von Emails",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "f66a2109-ed0d-44bd-941c-14973969111b",
+            "source": {
+              "cell": "d4ed4b6f-ddba-4c61-8fba-561a62b06699"
+            },
+            "target": {
+              "cell": "4a8dd257-5593-4352-af6f-5fe2972916e7"
+            },
+            "vertices": [],
+            "labels": [
+              "Weiterleitung von Emails"
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "4db57a1b-0331-49d8-8333-57473beb6c68",
+            "source": {
+              "x": 3800,
+              "y": 390
+            },
+            "target": {
+              "x": 3800,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 3790,
+                "y": -70
+              },
+              {
+                "x": 4230,
+                "y": -70
+              },
+              {
+                "x": 4250,
+                "y": 380
+              },
+              {
+                "x": 3920,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Liest Configs",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "63d7aec7-4e8a-4c71-8d2c-9cabda13652d",
+            "source": {
+              "cell": "f8252fdb-a936-4c30-94f4-33495b193c06"
+            },
+            "target": {
+              "cell": "30099559-a8f5-43be-807b-c480f9dad56a"
+            },
+            "vertices": [],
+            "labels": [
+              "Liest Configs"
+            ]
+          },
+          {
             "position": {
               "x": -352.9999999999902,
               "y": 436
@@ -3288,8 +3458,8 @@
           },
           {
             "position": {
-              "x": 2780,
-              "y": 69.99999999999989
+              "x": 2690,
+              "y": 40
             },
             "size": {
               "width": 120,
@@ -3348,8 +3518,8 @@
           },
           {
             "position": {
-              "x": 3380.00000000001,
-              "y": 167.9999999999999
+              "x": 3800.00000000001,
+              "y": 100
             },
             "size": {
               "width": 150,
@@ -3390,8 +3560,8 @@
           },
           {
             "position": {
-              "x": 3654.00000000001,
-              "y": 227.9999999999999
+              "x": 4074.00000000001,
+              "y": 140
             },
             "size": {
               "width": 130,
@@ -3432,8 +3602,8 @@
           },
           {
             "position": {
-              "x": 3514.00000000001,
-              "y": 57.999999999999886
+              "x": 3934.00000000001,
+              "y": -30
             },
             "size": {
               "width": 160,
@@ -3561,8 +3731,8 @@
           },
           {
             "position": {
-              "x": 3330.00000000001,
-              "y": 436
+              "x": 3360.00000000001,
+              "y": 455
             },
             "size": {
               "width": 110,
@@ -3600,8 +3770,8 @@
           },
           {
             "position": {
-              "x": 2785,
-              "y": -170
+              "x": 2695,
+              "y": -185
             },
             "size": {
               "width": 110,
@@ -3640,7 +3810,7 @@
           {
             "position": {
               "x": 3067.5,
-              "y": -10
+              "y": -200
             },
             "size": {
               "width": 112.5,
@@ -3692,8 +3862,8 @@
           },
           {
             "position": {
-              "x": 2993.00000000001,
-              "y": -245
+              "x": 2850,
+              "y": -290
             },
             "size": {
               "width": 110,
@@ -3731,7 +3901,7 @@
           {
             "position": {
               "x": 3067.5,
-              "y": 420
+              "y": 410
             },
             "size": {
               "width": 190,
@@ -3753,8 +3923,8 @@
             "id": "a111f5e8-a4f1-4a5a-9f1d-380b4f571947",
             "data": {
               "type": "tm.Flow",
-              "name": "Selbstbetriebener \nSIEM System",
-              "description": "SIEM System, die den 2FA und Allsecure Mobile Service überwacht und wöchentlicher Report an Management per Email sendet",
+              "name": "Data Flow",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
@@ -4045,7 +4215,7 @@
               "cell": "7826f7a8-e4a0-4415-b7bc-d41695903e42"
             },
             "target": {
-              "cell": "4a8dd257-5593-4352-af6f-5fe2972916e7"
+              "cell": "d4ed4b6f-ddba-4c61-8fba-561a62b06699"
             },
             "vertices": []
           },
@@ -4103,9 +4273,14 @@
               "cell": "a111f5e8-a4f1-4a5a-9f1d-380b4f571947"
             },
             "target": {
-              "cell": "4a8dd257-5593-4352-af6f-5fe2972916e7"
+              "cell": "d4ed4b6f-ddba-4c61-8fba-561a62b06699"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 3150,
+                "y": 160
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -4269,16 +4444,12 @@
                 "y": -260.0000000000001
               },
               {
-                "x": 3243.00000000001,
-                "y": 99.99999999999989
+                "x": 3520,
+                "y": -110
               },
               {
-                "x": 3263.00000000001,
-                "y": 329.9999999999999
-              },
-              {
-                "x": 3403.00000000001,
-                "y": 369.9999999999999
+                "x": 3540,
+                "y": 290
               },
               {
                 "x": 3513.00000000001,
@@ -4346,111 +4517,6 @@
               {
                 "x": 3070.00000000001,
                 "y": 779.9999999999999
-              }
-            ]
-          },
-          {
-            "shape": "trust-broundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 99,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": true,
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "threats": [
-                {
-                  "id": "e019e50b-2e78-45dd-a7de-925a27a8b843",
-                  "title": "Login Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Kathegotie Spoofing) Ein fremder Benutzer logt sich mit Daten anderes Benutzers ein.\nCAPEC-151 \nT-1598",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                },
-                {
-                  "id": "c9144318-711f-4ef4-954a-6f74434db543",
-                  "title": "TCP Flood",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "(Kategorie DoS) Große Menge an TCP Pakete an Server senden.\nCEPEC-482\nT-1499.002",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A\n",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 7,
-                  "score": ""
-                },
-                {
-                  "id": "82386a60-6129-45f6-af21-719981334cc3",
-                  "title": "Common Login and Passwords",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Spoofing) Try Common or Default Usernames and Passwords\nCAPEC-70\nT-1078",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 13,
-                  "score": ""
-                },
-                {
-                  "id": "da49c88f-d223-4f71-9b56-261f1b39fd34",
-                  "title": "Pharming",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Spoofing) Ein Benutzer wird nicht zur richtige Seite geschickt, sondern zu fake Seite, die genau so aussieht wie die richtige\nCAPEC-89  \nT-1589",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 14,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "c4b74aa7-e2be-45dd-b6e8-1036b9166687",
-            "source": {
-              "x": 3820.00000000001,
-              "y": 337.9999999999999
-            },
-            "target": {
-              "x": 3820.00000000001,
-              "y": 337.9999999999999
-            },
-            "vertices": [
-              {
-                "x": 3710,
-                "y": 400
-              },
-              {
-                "x": 3460.00000000001,
-                "y": 327.9999999999999
-              },
-              {
-                "x": 3393.00000000001,
-                "y": 99.99999999999989
-              },
-              {
-                "x": 3660.00000000001,
-                "y": 17.999999999999886
-              },
-              {
-                "x": 3820.00000000001,
-                "y": 200
               }
             ]
           },
@@ -4690,8 +4756,8 @@
             },
             "vertices": [
               {
-                "x": 3570.00000000001,
-                "y": 327.9999999999999
+                "x": 3990.00000000001,
+                "y": 240
               }
             ]
           },
@@ -4738,8 +4804,8 @@
             },
             "vertices": [
               {
-                "x": 3630.00000000001,
-                "y": 157.9999999999999
+                "x": 4050.00000000001,
+                "y": 70
               }
             ]
           },
@@ -4939,6 +5005,127 @@
                 "y": 820
               }
             ]
+          },
+          {
+            "position": {
+              "x": 2973.00000000001,
+              "y": -50
+            },
+            "size": {
+              "width": 110,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Email \nService"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "d4ed4b6f-ddba-4c61-8fba-561a62b06699",
+            "zIndex": 109,
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email \nService",
+              "description": "Öffentlicher Email Dienst von Allsecure",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": true,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 3290,
+              "y": -85
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Email Datenbank"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "df3edef1-ce74-4fac-86c3-eea71be5118f",
+            "zIndex": 110,
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email Datenbank",
+              "description": "Datenbank zur speicherung von Emails",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 3830.00000000001,
+              "y": 320
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Config Server"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "30099559-a8f5-43be-807b-c480f9dad56a",
+            "zIndex": 111,
+            "data": {
+              "type": "tm.Store",
+              "name": "Config Server",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
           }
         ],
         "description": "two"
