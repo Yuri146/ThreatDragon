@@ -1834,16 +1834,16 @@
               "threats": []
             },
             "id": "5952ae24-af61-42b3-9385-63f4b1d5e90b",
+            "labels": [
+              "Speichern von Emails"
+            ],
             "source": {
               "cell": "d4ed4b6f-ddba-4c61-8fba-561a62b06699"
             },
             "target": {
               "cell": "df3edef1-ce74-4fac-86c3-eea71be5118f"
             },
-            "vertices": [],
-            "labels": [
-              "Speichern von Emails"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1877,16 +1877,16 @@
               "threats": []
             },
             "id": "f66a2109-ed0d-44bd-941c-14973969111b",
+            "labels": [
+              "Weiterleitung von Emails"
+            ],
             "source": {
               "cell": "d4ed4b6f-ddba-4c61-8fba-561a62b06699"
             },
             "target": {
               "cell": "4a8dd257-5593-4352-af6f-5fe2972916e7"
             },
-            "vertices": [],
-            "labels": [
-              "Weiterleitung von Emails"
-            ]
+            "vertices": []
           },
           {
             "shape": "trust-broundary-curve",
@@ -1961,16 +1961,16 @@
               "threats": []
             },
             "id": "63d7aec7-4e8a-4c71-8d2c-9cabda13652d",
+            "labels": [
+              "Ließt Configs"
+            ],
             "source": {
               "cell": "f8252fdb-a936-4c30-94f4-33495b193c06"
             },
             "target": {
               "cell": "30099559-a8f5-43be-807b-c480f9dad56a"
             },
-            "vertices": [],
-            "labels": [
-              "Ließt Configs"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -2004,136 +2004,16 @@
               "threats": []
             },
             "id": "729fa6d8-f6a5-452a-ad2c-66718adf8538",
+            "labels": [
+              "Ließt Configs"
+            ],
             "source": {
               "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
             },
             "target": {
               "cell": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2"
             },
-            "vertices": [],
-            "labels": [
-              "Ließt Configs"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "586ac868-46fc-4bd6-8345-7ce403a068ab",
-            "source": {
-              "cell": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2"
-            },
-            "target": {
-              "x": 3340,
-              "y": 236
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "e93d35dd-8260-4b18-b5a0-9fa2dbe1a51a",
-            "source": {
-              "cell": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2"
-            },
-            "target": {
-              "x": 3340,
-              "y": 236
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "d55821e6-225b-4558-bb95-83c1914f7bb7",
-            "source": {
-              "cell": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2"
-            },
-            "target": {
-              "x": 3340,
-              "y": 236
-            }
+            "vertices": []
           },
           {
             "position": {
@@ -3589,7 +3469,7 @@
             "id": "56faf04b-ea34-4ded-b028-95505285ca7d",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Standartisierter\n2FA Service",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -3612,7 +3492,7 @@
               ],
               "isBidirectional": false,
               "protocol": "",
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "isALog": false,
               "storesCredentials": false,
@@ -4581,6 +4461,9 @@
               "threats": []
             },
             "id": "4ab8f481-df11-46b3-aae6-ff3cd505e74d",
+            "labels": [
+              "Allsecure"
+            ],
             "source": {
               "x": 2733.00000000001,
               "y": 439.9999999999999
@@ -4630,9 +4513,6 @@
                 "x": 2953.00000000001,
                 "y": 569.9999999999999
               }
-            ],
-            "labels": [
-              "Allsecure"
             ]
           },
           {
@@ -4710,7 +4590,7 @@
               "isBidirectional": false,
               "reasonOutOfScope": "",
               "protocol": "HTTPS",
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": true,
               "hasOpenThreats": true,
               "threats": [
@@ -5190,8 +5070,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "d4ed4b6f-ddba-4c61-8fba-561a62b06699",
             "zIndex": 109,
+            "id": "d4ed4b6f-ddba-4c61-8fba-561a62b06699",
             "data": {
               "type": "tm.Flow",
               "name": "Email \nService",
@@ -5209,8 +5089,8 @@
           },
           {
             "position": {
-              "x": 3290,
-              "y": -85
+              "x": 3280,
+              "y": -40
             },
             "size": {
               "width": 120,
@@ -5231,8 +5111,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "df3edef1-ce74-4fac-86c3-eea71be5118f",
             "zIndex": 110,
+            "id": "df3edef1-ce74-4fac-86c3-eea71be5118f",
             "data": {
               "type": "tm.Flow",
               "name": "Email Datenbank",
@@ -5274,12 +5154,12 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "30099559-a8f5-43be-807b-c480f9dad56a",
             "zIndex": 111,
+            "id": "30099559-a8f5-43be-807b-c480f9dad56a",
             "data": {
-              "type": "tm.Store",
+              "type": "tm.Flow",
               "name": "Config Server",
-              "description": "Server der die Konfigurationdateien speichert.  ",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
@@ -5287,7 +5167,10 @@
               "isEncrypted": false,
               "isSigned": false,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isPublicNetwork": false
             }
           },
           {
@@ -5314,17 +5197,17 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2",
             "zIndex": 112,
+            "id": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
+              "name": "Config Server",
+              "description": "Server der die Konfigurationdateien \n und Schlüsseln speichert.  ",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
               "storesCredentials": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isSigned": false,
               "hasOpenThreats": false,
               "threats": [],
