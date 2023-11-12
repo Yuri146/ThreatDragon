@@ -11,7 +11,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "Backup1",
+        "title": "Praktikum3",
         "diagramType": "Generic",
         "placeholder": "New generic diagram description",
         "thumbnail": "./public/content/images/thumbnail.jpg",
@@ -416,6 +416,47 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
+            "id": "85b4bc78-ebb4-4276-9ccb-505d16b729f9",
+            "source": {
+              "x": -759.9999999999902,
+              "y": 530
+            },
+            "target": {
+              "x": -759.9999999999902,
+              "y": 530
+            },
+            "vertices": [
+              {
+                "x": -920,
+                "y": 510
+              },
+              {
+                "x": -1019.9999999999902,
+                "y": 380
+              },
+              {
+                "x": -709.9999999999902,
+                "y": 290
+              },
+              {
+                "x": -569.9999999999902,
+                "y": 410
+              }
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
             "id": "f07aaa62-d0ae-4d05-b5a1-83c54dacca07",
             "source": {
               "x": 110.00000000000978,
@@ -427,10 +468,6 @@
             },
             "vertices": [
               {
-                "x": 50,
-                "y": 290
-              },
-              {
                 "x": -249.99999999999022,
                 "y": 200
               },
@@ -441,6 +478,10 @@
               {
                 "x": -49.99999999999022,
                 "y": -110
+              },
+              {
+                "x": 140,
+                "y": 130
               }
             ]
           },
@@ -472,19 +513,19 @@
                 "y": 690
               },
               {
-                "x": -430,
+                "x": -401.9999999999902,
+                "y": 480
+              },
+              {
+                "x": -311.9999999999902,
+                "y": 290
+              },
+              {
+                "x": -189.99999999999022,
                 "y": 460
               },
               {
-                "x": -310,
-                "y": 270
-              },
-              {
-                "x": -180,
-                "y": 470
-              },
-              {
-                "x": -200,
+                "x": -210,
                 "y": 700
               }
             ]
@@ -1295,16 +1336,16 @@
             },
             "vertices": [
               {
-                "x": -1080,
-                "y": 60
+                "x": -1049.9999999999902,
+                "y": 100
               },
               {
-                "x": -950,
+                "x": -999.9999999999902,
+                "y": -40
+              },
+              {
+                "x": -739.9999999999902,
                 "y": -90
-              },
-              {
-                "x": -670,
-                "y": -110
               },
               {
                 "x": -559.9999999999902,
@@ -1315,7 +1356,7 @@
                 "y": 160
               },
               {
-                "x": -840,
+                "x": -829.9999999999902,
                 "y": 250
               }
             ]
@@ -1414,37 +1455,40 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "TELCO",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "id": "4db57a1b-0331-49d8-8333-57473beb6c68",
             "source": {
-              "x": 1965,
-              "y": 460
+              "x": 1945,
+              "y": 500
             },
             "target": {
-              "x": 1965,
-              "y": 460
+              "x": 1945,
+              "y": 500
             },
             "vertices": [
               {
-                "x": 1955,
-                "y": 0
+                "x": 1935,
+                "y": 40
+              },
+              {
+                "x": 2375,
+                "y": 40
               },
               {
                 "x": 2395,
-                "y": 0
+                "y": 490
               },
               {
-                "x": 2415,
-                "y": 450
-              },
-              {
-                "x": 2085,
-                "y": 540
+                "x": 2065,
+                "y": 580
               }
+            ],
+            "labels": [
+              "TELCO"
             ]
           },
           {
@@ -1534,51 +1578,6 @@
             "vertices": []
           },
           {
-            "shape": "trust-broundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "02f23961-cec1-4dda-b112-e3650c74b774",
-            "source": {
-              "x": -930,
-              "y": 510
-            },
-            "target": {
-              "x": -930,
-              "y": 510
-            },
-            "vertices": [
-              {
-                "x": -700,
-                "y": 505
-              },
-              {
-                "x": -570,
-                "y": 370
-              },
-              {
-                "x": -810,
-                "y": 300
-              },
-              {
-                "x": -1020,
-                "y": 380
-              },
-              {
-                "x": -990,
-                "y": 480
-              }
-            ]
-          },
-          {
             "position": {
               "x": -352.9999999999902,
               "y": 436
@@ -1653,8 +1652,8 @@
           },
           {
             "position": {
-              "x": 558.00000000001,
-              "y": 369.9999999999999
+              "x": 668.00000000001,
+              "y": 276
             },
             "size": {
               "width": 112.5,
@@ -1695,8 +1694,8 @@
           },
           {
             "position": {
-              "x": 830,
-              "y": 320
+              "x": 900,
+              "y": 269.9999999999999
             },
             "size": {
               "width": 210,
@@ -1707,8 +1706,8 @@
                 "text": "Standartisierter Login \nSystem + Mobile App"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1723,22 +1722,8 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "c6620fc6-11ff-4578-b491-a5e19a65474e",
-                  "title": "OS Command Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Kategorie EoP) Injection and execution of OS commands to elevate privileges.\nCAPEC-88\nT-1574\n\nDREAD: (10 10 8 10 5)=8",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 8,
-                  "score": ""
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": true,
@@ -1750,8 +1735,8 @@
           },
           {
             "position": {
-              "x": 1118.00000000001,
-              "y": 249.9999999999999
+              "x": 1208.00000000001,
+              "y": 190
             },
             "size": {
               "width": 150,
@@ -1762,8 +1747,8 @@
                 "text": "Standartisierter\n2FA Service"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1778,22 +1763,8 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "e61db201-ca04-4dfc-8dbd-314676bfae9b",
-                  "title": "Resource Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "description": "(Kategorie Repudiaion) Injection von unbefügten log Einträgen. \nCAPEC-240\nT-1659\nDREAD: (10 10 5 10 5)=9",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": ""
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": true,
@@ -1805,8 +1776,8 @@
           },
           {
             "position": {
-              "x": 855,
-              "y": 110
+              "x": 925,
+              "y": 59.999999999999886
             },
             "size": {
               "width": 120,
@@ -1817,13 +1788,11 @@
                 "text": "Log Datenbank"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1841,22 +1810,8 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "e61db201-ca04-4dfc-8dbd-314676bfae9b",
-                  "title": "Resource Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "description": "(Kategorie Repudiaion) Injection von unbefügten log Einträgen. \nCAPEC-240\nT-1659\nDREAD: (10 10 5 10 5)=9",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": ""
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "isBidirectional": false,
               "protocol": "",
               "isPublicNetwork": false,
@@ -1865,8 +1820,8 @@
           },
           {
             "position": {
-              "x": 1965.00000000001,
-              "y": 170
+              "x": 1945.00000000001,
+              "y": 210
             },
             "size": {
               "width": 150,
@@ -1907,8 +1862,8 @@
           },
           {
             "position": {
-              "x": 2239.00000000001,
-              "y": 210
+              "x": 2219.00000000001,
+              "y": 250
             },
             "size": {
               "width": 130,
@@ -1949,8 +1904,8 @@
           },
           {
             "position": {
-              "x": 2079.00000000001,
-              "y": 30
+              "x": 2059.00000000001,
+              "y": 70
             },
             "size": {
               "width": 160,
@@ -1994,8 +1949,8 @@
           },
           {
             "position": {
-              "x": 830,
-              "y": 800
+              "x": 900,
+              "y": 749.9999999999999
             },
             "size": {
               "width": 120,
@@ -2039,8 +1994,8 @@
           },
           {
             "position": {
-              "x": 1065,
-              "y": 770
+              "x": 1135,
+              "y": 719.9999999999999
             },
             "size": {
               "width": 150,
@@ -2078,8 +2033,8 @@
           },
           {
             "position": {
-              "x": 1525.00000000001,
-              "y": 525
+              "x": 1635,
+              "y": 374.9999999999999
             },
             "size": {
               "width": 110,
@@ -2117,8 +2072,8 @@
           },
           {
             "position": {
-              "x": 860,
-              "y": -115
+              "x": 930,
+              "y": -165.0000000000001
             },
             "size": {
               "width": 110,
@@ -2156,8 +2111,8 @@
           },
           {
             "position": {
-              "x": 1232.5,
-              "y": -130
+              "x": 1302.5,
+              "y": -180.0000000000001
             },
             "size": {
               "width": 112.5,
@@ -2168,8 +2123,8 @@
                 "text": "Management"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2184,22 +2139,8 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "3dadb9d7-2228-473f-819d-d62d18bb548c",
-                  "title": "Phishing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Spoofing) Der Manager kann unvertrauliche Emails erhalten und eventuell seine Daten sehlen lassen.\nCAPEC-98\nT-1598\nDREAD: (10 10 5 10 5)=8",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 17,
-                  "score": ""
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -2209,8 +2150,8 @@
           },
           {
             "position": {
-              "x": 1015,
-              "y": -220
+              "x": 1085,
+              "y": -270.0000000000001
             },
             "size": {
               "width": 110,
@@ -2247,8 +2188,8 @@
           },
           {
             "position": {
-              "x": 1232.5,
-              "y": 480
+              "x": 1382.5,
+              "y": 349.9999999999999
             },
             "size": {
               "width": 190,
@@ -2326,8 +2267,8 @@
             },
             "vertices": [
               {
-                "x": 1438.00000000001,
-                "y": 659.9999999999999
+                "x": 1508.00000000001,
+                "y": 609.9999999999998
               }
             ]
           },
@@ -2460,8 +2401,8 @@
             },
             "vertices": [
               {
-                "x": 1255,
-                "y": 419.9999999999999
+                "x": 1325,
+                "y": 369.9999999999998
               }
             ]
           },
@@ -2485,7 +2426,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Überwacht",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2498,7 +2439,7 @@
             },
             "id": "b7e73443-1555-4379-97fe-ef21a9189d8a",
             "labels": [
-              "Übeerwacht"
+              "Überwacht"
             ],
             "source": {
               "cell": "a111f5e8-a4f1-4a5a-9f1d-380b4f571947"
@@ -2512,8 +2453,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2529,7 +2469,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Monatlicher Report",
+              "name": "(Monatlicher Report)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2537,26 +2477,12 @@
               "protocol": "",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "51951774-e655-47e9-b098-42e8caab53d3",
-                  "title": "Email Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Denial of Service) Der Angreifer kann im Header des Emails virusenthaltige Dateien mitsenden und Manager kann die ungewollt ausführen\nCAPEC-134\nT-1659\nDREAD: (10 10 5 10 8)=9",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 15,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
             "id": "e7249757-bff6-4a4c-ba0f-b6083e8ce047",
             "labels": [
-              "Monatlicher Report"
+              "(Monatlicher Report)"
             ],
             "source": {
               "cell": "7826f7a8-e4a0-4415-b7bc-d41695903e42"
@@ -2570,8 +2496,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2587,7 +2512,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "wöchentlicher Report",
+              "name": "(Wöchentlicher Report)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2595,26 +2520,12 @@
               "protocol": "",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "51951774-e655-47e9-b098-42e8caab53d3",
-                  "title": "Email Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Denial of Service) Der Angreifer kann im Header des Emails virusenthaltige Dateien mitsenden und Manager kann die ungewollt ausführen\nCAPEC-134\nT-1659\nDREAD: (10 10 5 10 8)=8",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 15,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
             "id": "8b59a335-a69c-496d-85b2-74c9f56ee5d9",
             "labels": [
-              "wöchentlicher Report"
+              "(Wöchentlicher Report)"
             ],
             "source": {
               "cell": "a111f5e8-a4f1-4a5a-9f1d-380b4f571947"
@@ -2624,8 +2535,8 @@
             },
             "vertices": [
               {
-                "x": 1315,
-                "y": 230
+                "x": 1430,
+                "y": 190
               }
             ]
           },
@@ -2649,20 +2560,20 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "log(login, phone, ott)",
+              "name": "(OTT)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
+              "protocol": "AES",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "hasOpenThreats": false,
               "threats": []
             },
             "id": "fdeb500e-c391-4dd5-8d73-efc150fdb244",
             "labels": [
-              "OTT"
+              "(OTT)"
             ],
             "source": {
               "cell": "721b34e5-0335-45a1-9840-d77cf99e0a50"
@@ -2672,16 +2583,16 @@
             },
             "vertices": [
               {
-                "x": 1438.00000000001,
-                "y": 1010
+                "x": 1508.00000000001,
+                "y": 959.9999999999998
               },
               {
-                "x": 1138.00000000001,
-                "y": 1040
+                "x": 1160,
+                "y": 1050
               },
               {
-                "x": 738.00000000001,
-                "y": 889.9999999999999
+                "x": 808.00000000001,
+                "y": 839.9999999999998
               }
             ]
           },
@@ -2689,8 +2600,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2714,22 +2624,8 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "4183f4df-1072-4d33-ac20-42e2ee7132b7",
-                  "title": "XML Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Kategorie Tampering) XML Injection um Logs zu manipulieren.\nCAPEC-250\nT-1659",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 9,
-                  "score": ""
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "isTrustBoundary": true
             },
             "id": "9caf34fb-4b49-4487-a935-0ae3ffee846e",
@@ -2769,53 +2665,53 @@
               "Allsecure"
             ],
             "source": {
-              "x": 898.00000000001,
-              "y": 509.9999999999999
+              "x": 968.00000000001,
+              "y": 459.9999999999998
             },
             "target": {
-              "x": 898.00000000001,
-              "y": 509.9999999999999
+              "x": 968.00000000001,
+              "y": 459.9999999999998
             },
             "vertices": [
               {
-                "x": 865,
-                "y": 460
+                "x": 935,
+                "y": 409.9999999999999
               },
               {
-                "x": 825.00000000001,
-                "y": 237.9999999999999
+                "x": 895.00000000001,
+                "y": 187.99999999999977
               },
               {
-                "x": 868.00000000001,
-                "y": -210.0000000000001
+                "x": 938.00000000001,
+                "y": -260.0000000000002
               },
               {
-                "x": 1308.00000000001,
-                "y": -190.0000000000001
+                "x": 1378.00000000001,
+                "y": -240.00000000000023
               },
               {
-                "x": 1685,
-                "y": -40
+                "x": 1755,
+                "y": -90.00000000000011
               },
               {
-                "x": 1705,
-                "y": 360
+                "x": 1775,
+                "y": 309.9999999999999
               },
               {
-                "x": 1678.00000000001,
-                "y": 599.9999999999999
+                "x": 1748.00000000001,
+                "y": 549.9999999999998
               },
               {
-                "x": 1558.00000000001,
-                "y": 699.9999999999999
+                "x": 1628.00000000001,
+                "y": 649.9999999999998
               },
               {
-                "x": 1318.00000000001,
-                "y": 719.9999999999999
+                "x": 1388.00000000001,
+                "y": 669.9999999999998
               },
               {
-                "x": 1118.00000000001,
-                "y": 639.9999999999999
+                "x": 1188.00000000001,
+                "y": 589.9999999999998
               }
             ]
           },
@@ -2827,7 +2723,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "log(login, OTT, Phone Number)",
+              "name": "TELCO des Users",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -2841,38 +2737,40 @@
             },
             "id": "bfe0b534-1050-4dd5-89fb-f78c38a25c0f",
             "source": {
-              "x": 1045.00000000001,
-              "y": 969.9999999999999
+              "x": 1115.00000000001,
+              "y": 919.9999999999998
             },
             "target": {
-              "x": 1045.00000000001,
-              "y": 969.9999999999999
+              "x": 1115.00000000001,
+              "y": 919.9999999999998
             },
             "vertices": [
               {
-                "x": 875,
-                "y": 969.9999999999999
+                "x": 945,
+                "y": 919.9999999999998
               },
               {
-                "x": 785.00000000001,
-                "y": 819.9999999999999
+                "x": 855.00000000001,
+                "y": 769.9999999999998
               },
               {
-                "x": 1095.00000000001,
-                "y": 729.9999999999999
+                "x": 1165.00000000001,
+                "y": 679.9999999999998
               },
               {
-                "x": 1235.00000000001,
-                "y": 849.9999999999999
+                "x": 1305.00000000001,
+                "y": 799.9999999999998
               }
+            ],
+            "labels": [
+              "TELCO des Users"
             ]
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2896,61 +2794,8 @@
               "protocol": "HTTPS",
               "isEncrypted": true,
               "isPublicNetwork": true,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "e019e50b-2e78-45dd-a7de-925a27a8b843",
-                  "title": "Login Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Kathegotie Spoofing) Ein fremder Benutzer logt sich mit Daten anderes Benutzers ein.\nCAPEC-151 \nT-1598\nDREAD: (10 10 3 10 5) = 9\nGegenmaßnahme: One Time Token dauer verniedrigen und den Login einmalig machen, sodass man sich für jeder Anmeldung ein Token holen muss.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                },
-                {
-                  "id": "c9144318-711f-4ef4-954a-6f74434db543",
-                  "title": "TCP Flood",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "(Kategorie DoS) Große Menge an TCP Pakete an Server senden.\nCEPEC-482\nT-1499.002\nDREAD: (10 10 5 10 5)=9",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A\n",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 7,
-                  "score": ""
-                },
-                {
-                  "id": "82386a60-6129-45f6-af21-719981334cc3",
-                  "title": "Common Login and Passwords",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Spoofing) Try Common or Default Usernames and Passwords\nCAPEC-70\nT-1078\nDREAD: (10 10 7 10 5)=8",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 13,
-                  "score": ""
-                },
-                {
-                  "id": "da49c88f-d223-4f71-9b56-261f1b39fd34",
-                  "title": "Pharming",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Spoofing) Ein Benutzer wird nicht zur richtige Seite geschickt, sondern zu fake Seite, die genau so aussieht wie die richtige\nCAPEC-89  \nT-1589\nDREAD: (10 10 6 10 5)=7",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 14,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
             "id": "9fc9afbc-1efb-41af-9d82-b216e9e31e7e",
             "labels": [
@@ -3007,8 +2852,8 @@
             },
             "vertices": [
               {
-                "x": 1065.00000000001,
-                "y": 333.9999999999999
+                "x": 1135.00000000001,
+                "y": 283.9999999999998
               }
             ]
           },
@@ -3032,7 +2877,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Weiterleitung von Telefonnummer",
+              "name": "(Telefonnummer)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -3045,7 +2890,7 @@
             },
             "id": "f758e6a6-b4ab-4a18-8172-f5657b30f8c5",
             "labels": [
-              "Weiterleitung von Telefonnummer"
+              "(Telefonnummer)"
             ],
             "source": {
               "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
@@ -3055,8 +2900,8 @@
             },
             "vertices": [
               {
-                "x": 1645,
-                "y": 310.5
+                "x": 1710,
+                "y": 310
               }
             ]
           },
@@ -3080,7 +2925,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Telefonnummer, OTT",
+              "name": "(Telefonnummer)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -3093,7 +2938,7 @@
             },
             "id": "ca1c3ff1-1cf6-4a8e-b0da-7f30221f5857",
             "labels": [
-              "Telefonnummer"
+              "(Telefonnummer)"
             ],
             "source": {
               "cell": "f8252fdb-a936-4c30-94f4-33495b193c06"
@@ -3103,8 +2948,8 @@
             },
             "vertices": [
               {
-                "x": 2155.00000000001,
-                "y": 310
+                "x": 2135.00000000001,
+                "y": 350
               }
             ]
           },
@@ -3151,8 +2996,8 @@
             },
             "vertices": [
               {
-                "x": 2215.00000000001,
-                "y": 140
+                "x": 2195.00000000001,
+                "y": 180
               }
             ]
           },
@@ -3176,7 +3021,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "(Telefonanbieter)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -3189,7 +3034,7 @@
             },
             "id": "218ae4aa-5a2d-4ab0-9689-59c894f26ec6",
             "labels": [
-              "Telefonanbieter"
+              "(Telefonanbieter)"
             ],
             "source": {
               "cell": "d5bea8e1-754c-4525-af90-243a6b034cc5"
@@ -3203,8 +3048,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3228,22 +3072,8 @@
               "protocol": "AES",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "eef2b6cb-aaf5-4f9c-86f7-c39c81a8ff8d",
-                  "title": "Man In the Middle",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "(Kategorie Infomaion Disclosure) Ein Angreifer kann die Kommunikation zwischen 2FA und Telco auslesen und Telefonnummer mibekommen. \nCAPEC-94\nT-1040\nDREAD: (10 10 5 10 5)=9",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 11,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "threats": []
             },
             "id": "091513d6-dd54-4075-9baf-ecadc71ffd60",
             "labels": [
@@ -3257,8 +3087,8 @@
             },
             "vertices": [
               {
-                "x": 1635,
-                "y": 260
+                "x": 1670,
+                "y": 230
               }
             ]
           },
@@ -3282,7 +3112,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Telefonnummer, OTT",
+              "name": "(Telefonnummer, OTT)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -3295,7 +3125,7 @@
             },
             "id": "5da2f1da-4020-4143-8f12-06e5873291da",
             "labels": [
-              "Telefonnummer, OTT"
+              "(Telefonnummer, OTT)"
             ],
             "source": {
               "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
@@ -3348,15 +3178,15 @@
             },
             "vertices": [
               {
-                "x": 1035,
-                "y": 890
+                "x": 1105,
+                "y": 839.9999999999999
               }
             ]
           },
           {
             "position": {
-              "x": 1138.00000000001,
-              "y": 20
+              "x": 1228.00000000001,
+              "y": 10
             },
             "size": {
               "width": 110,
@@ -3393,8 +3223,8 @@
           },
           {
             "position": {
-              "x": 1445,
-              "y": 30
+              "x": 1515,
+              "y": -80.00000000000011
             },
             "size": {
               "width": 120,
@@ -3436,8 +3266,8 @@
           },
           {
             "position": {
-              "x": 2005.00000000001,
-              "y": 406
+              "x": 1975.00000000001,
+              "y": 420
             },
             "size": {
               "width": 120,
@@ -3479,8 +3309,8 @@
           },
           {
             "position": {
-              "x": 1455,
-              "y": 406
+              "x": 1080,
+              "y": 409.9999999999999
             },
             "size": {
               "width": 120,
