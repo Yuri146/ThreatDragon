@@ -1,8 +1,8 @@
 {
-  "version": "2.0.9",
+  "version": "2.1.1",
   "summary": {
     "title": "P3",
-    "owner": "ich, fadi",
+    "owner": "Yukhym, Fadi",
     "description": "",
     "id": 0
   },
@@ -11,7 +11,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "one",
+        "title": "Praktikum3",
         "diagramType": "Generic",
         "placeholder": "New generic diagram description",
         "thumbnail": "./public/content/images/thumbnail.jpg",
@@ -5217,16 +5217,7 @@
             }
           }
         ],
-        "description": "two"
-      },
-      {
-        "id": 1,
-        "title": "Kopie",
-        "diagramType": "Generic",
-        "placeholder": "New generic diagram description",
-        "thumbnail": "./public/content/images/thumbnail.jpg",
-        "version": "2.0.9",
-        "cells": []
+        "description": ""
       }
     ],
     "diagramTop": 2,
