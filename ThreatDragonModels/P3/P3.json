@@ -1455,37 +1455,40 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "TELCO",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "id": "4db57a1b-0331-49d8-8333-57473beb6c68",
             "source": {
-              "x": 2035,
-              "y": 409.9999999999999
+              "x": 1945,
+              "y": 500
             },
             "target": {
-              "x": 2035,
-              "y": 409.9999999999999
+              "x": 1945,
+              "y": 500
             },
             "vertices": [
               {
-                "x": 2025,
-                "y": -50.000000000000114
+                "x": 1935,
+                "y": 40
               },
               {
-                "x": 2465,
-                "y": -50.000000000000114
+                "x": 2375,
+                "y": 40
               },
               {
-                "x": 2485,
-                "y": 399.9999999999999
+                "x": 2395,
+                "y": 490
               },
               {
-                "x": 2155,
-                "y": 489.9999999999999
+                "x": 2065,
+                "y": 580
               }
+            ],
+            "labels": [
+              "TELCO"
             ]
           },
           {
@@ -1649,8 +1652,8 @@
           },
           {
             "position": {
-              "x": 628.00000000001,
-              "y": 319.9999999999998
+              "x": 668.00000000001,
+              "y": 276
             },
             "size": {
               "width": 112.5,
@@ -1732,8 +1735,8 @@
           },
           {
             "position": {
-              "x": 1188.00000000001,
-              "y": 199.99999999999977
+              "x": 1208.00000000001,
+              "y": 190
             },
             "size": {
               "width": 150,
@@ -1817,8 +1820,8 @@
           },
           {
             "position": {
-              "x": 2035.00000000001,
-              "y": 119.99999999999989
+              "x": 1945.00000000001,
+              "y": 210
             },
             "size": {
               "width": 150,
@@ -1859,8 +1862,8 @@
           },
           {
             "position": {
-              "x": 2309.00000000001,
-              "y": 159.9999999999999
+              "x": 2219.00000000001,
+              "y": 250
             },
             "size": {
               "width": 130,
@@ -1901,8 +1904,8 @@
           },
           {
             "position": {
-              "x": 2149.00000000001,
-              "y": -20.000000000000114
+              "x": 2059.00000000001,
+              "y": 70
             },
             "size": {
               "width": 160,
@@ -2030,8 +2033,8 @@
           },
           {
             "position": {
-              "x": 1595.00000000001,
-              "y": 474.9999999999999
+              "x": 1635,
+              "y": 374.9999999999999
             },
             "size": {
               "width": 110,
@@ -2185,8 +2188,8 @@
           },
           {
             "position": {
-              "x": 1302.5,
-              "y": 429.9999999999999
+              "x": 1382.5,
+              "y": 349.9999999999999
             },
             "size": {
               "width": 190,
@@ -2423,7 +2426,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Überwacht",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2436,7 +2439,7 @@
             },
             "id": "b7e73443-1555-4379-97fe-ef21a9189d8a",
             "labels": [
-              "Übeerwacht"
+              "Überwacht"
             ],
             "source": {
               "cell": "a111f5e8-a4f1-4a5a-9f1d-380b4f571947"
@@ -2466,7 +2469,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Monatlicher Report",
+              "name": "(Monatlicher Report)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2479,7 +2482,7 @@
             },
             "id": "e7249757-bff6-4a4c-ba0f-b6083e8ce047",
             "labels": [
-              "Monatlicher Report"
+              "(Monatlicher Report)"
             ],
             "source": {
               "cell": "7826f7a8-e4a0-4415-b7bc-d41695903e42"
@@ -2509,7 +2512,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "wöchentlicher Report",
+              "name": "(Wöchentlicher Report)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2522,7 +2525,7 @@
             },
             "id": "8b59a335-a69c-496d-85b2-74c9f56ee5d9",
             "labels": [
-              "wöchentlicher Report"
+              "(Wöchentlicher Report)"
             ],
             "source": {
               "cell": "a111f5e8-a4f1-4a5a-9f1d-380b4f571947"
@@ -2530,7 +2533,12 @@
             "target": {
               "cell": "d4ed4b6f-ddba-4c61-8fba-561a62b06699"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1430,
+                "y": 190
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2552,7 +2560,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "OTT",
+              "name": "(OTT)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2565,7 +2573,7 @@
             },
             "id": "fdeb500e-c391-4dd5-8d73-efc150fdb244",
             "labels": [
-              "OTT"
+              "(OTT)"
             ],
             "source": {
               "cell": "721b34e5-0335-45a1-9840-d77cf99e0a50"
@@ -2715,7 +2723,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "log(login, OTT, Phone Number)",
+              "name": "TELCO des Users",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -2753,6 +2761,9 @@
                 "x": 1305.00000000001,
                 "y": 799.9999999999998
               }
+            ],
+            "labels": [
+              "TELCO des Users"
             ]
           },
           {
@@ -2866,7 +2877,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Weiterleitung von Telefonnummer",
+              "name": "(Telefonnummer)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2879,7 +2890,7 @@
             },
             "id": "f758e6a6-b4ab-4a18-8172-f5657b30f8c5",
             "labels": [
-              "Weiterleitung von Telefonnummer"
+              "(Telefonnummer)"
             ],
             "source": {
               "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
@@ -2889,8 +2900,8 @@
             },
             "vertices": [
               {
-                "x": 1715,
-                "y": 260.4999999999999
+                "x": 1710,
+                "y": 310
               }
             ]
           },
@@ -2914,7 +2925,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Telefonnummer, OTT",
+              "name": "(Telefonnummer)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2927,7 +2938,7 @@
             },
             "id": "ca1c3ff1-1cf6-4a8e-b0da-7f30221f5857",
             "labels": [
-              "Telefonnummer"
+              "(Telefonnummer)"
             ],
             "source": {
               "cell": "f8252fdb-a936-4c30-94f4-33495b193c06"
@@ -2937,8 +2948,8 @@
             },
             "vertices": [
               {
-                "x": 2225.00000000001,
-                "y": 259.9999999999999
+                "x": 2135.00000000001,
+                "y": 350
               }
             ]
           },
@@ -2985,8 +2996,8 @@
             },
             "vertices": [
               {
-                "x": 2285.00000000001,
-                "y": 89.99999999999989
+                "x": 2195.00000000001,
+                "y": 180
               }
             ]
           },
@@ -3010,7 +3021,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "(Telefonanbieter)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -3023,7 +3034,7 @@
             },
             "id": "218ae4aa-5a2d-4ab0-9689-59c894f26ec6",
             "labels": [
-              "Telefonanbieter"
+              "(Telefonanbieter)"
             ],
             "source": {
               "cell": "d5bea8e1-754c-4525-af90-243a6b034cc5"
@@ -3076,8 +3087,8 @@
             },
             "vertices": [
               {
-                "x": 1705,
-                "y": 209.9999999999999
+                "x": 1670,
+                "y": 230
               }
             ]
           },
@@ -3101,7 +3112,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Telefonnummer, OTT",
+              "name": "(Telefonnummer, OTT)",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -3114,7 +3125,7 @@
             },
             "id": "5da2f1da-4020-4143-8f12-06e5873291da",
             "labels": [
-              "Telefonnummer, OTT"
+              "(Telefonnummer, OTT)"
             ],
             "source": {
               "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
@@ -3174,8 +3185,8 @@
           },
           {
             "position": {
-              "x": 1208.00000000001,
-              "y": -30.000000000000114
+              "x": 1228.00000000001,
+              "y": 10
             },
             "size": {
               "width": 110,
@@ -3213,7 +3224,7 @@
           {
             "position": {
               "x": 1515,
-              "y": -20.000000000000114
+              "y": -80.00000000000011
             },
             "size": {
               "width": 120,
@@ -3255,8 +3266,8 @@
           },
           {
             "position": {
-              "x": 2075.00000000001,
-              "y": 355.9999999999999
+              "x": 1975.00000000001,
+              "y": 420
             },
             "size": {
               "width": 120,
@@ -3298,8 +3309,8 @@
           },
           {
             "position": {
-              "x": 1525,
-              "y": 355.9999999999999
+              "x": 1080,
+              "y": 409.9999999999999
             },
             "size": {
               "width": 120,
