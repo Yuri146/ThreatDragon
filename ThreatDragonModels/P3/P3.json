@@ -1949,7 +1949,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Liest Configs",
+              "name": "Ließt Configs",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -1969,7 +1969,50 @@
             },
             "vertices": [],
             "labels": [
-              "Liest Configs"
+              "Ließt Configs"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Ließt Configs",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "729fa6d8-f6a5-452a-ad2c-66718adf8538",
+            "source": {
+              "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
+            },
+            "target": {
+              "cell": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2"
+            },
+            "vertices": [],
+            "labels": [
+              "Ließt Configs"
             ]
           },
           {
@@ -3426,8 +3469,8 @@
             "id": "56faf04b-ea34-4ded-b028-95505285ca7d",
             "data": {
               "type": "tm.Flow",
-              "name": "Standartisierter\n2FA Service",
-              "description": "Anstatt benutzung von Eigenentwicklungen wird es Standart-Software eingesetzt, damit man sich selbst nicht in Risiko vom Angriff setzt. ",
+              "name": "Data Flow",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
@@ -3449,7 +3492,7 @@
               ],
               "isBidirectional": false,
               "protocol": "",
-              "isEncrypted": true,
+              "isEncrypted": false,
               "isPublicNetwork": false,
               "isALog": false,
               "storesCredentials": false,
@@ -3602,8 +3645,8 @@
           },
           {
             "position": {
-              "x": 3934.00000000001,
-              "y": -30
+              "x": 3914.00000000001,
+              "y": -40
             },
             "size": {
               "width": 160,
@@ -4685,20 +4728,20 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Antwort",
+              "name": "Weiterleitung von Telefonnummer",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
+              "protocol": "AES",
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "hasOpenThreats": false,
               "threats": []
             },
             "id": "f758e6a6-b4ab-4a18-8172-f5657b30f8c5",
             "labels": [
-              "2. Weiterleitung \nTelefonnummer"
+              "Weiterleitung von Telefonnummer"
             ],
             "source": {
               "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
@@ -4708,8 +4751,8 @@
             },
             "vertices": [
               {
-                "x": 3250.00000000001,
-                "y": 287.9999999999999
+                "x": 3450,
+                "y": 270
               }
             ]
           },
@@ -4873,12 +4916,12 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Antwort",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
-              "protocol": "",
+              "protocol": "AES",
               "isEncrypted": true,
               "isPublicNetwork": false,
               "hasOpenThreats": true,
@@ -4910,8 +4953,8 @@
             },
             "vertices": [
               {
-                "x": 3270,
-                "y": 223
+                "x": 3470,
+                "y": 190
               }
             ]
           },
@@ -5089,8 +5132,8 @@
           },
           {
             "position": {
-              "x": 3830.00000000001,
-              "y": 320
+              "x": 3840.00000000001,
+              "y": 336
             },
             "size": {
               "width": 120,
@@ -5116,7 +5159,47 @@
             "data": {
               "type": "tm.Store",
               "name": "Config Server",
-              "description": "",
+              "description": "Server der die Konfigurationdateien speichert.  ",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 3290,
+              "y": 336
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Config Server"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2",
+            "zIndex": 112,
+            "data": {
+              "type": "tm.Store",
+              "name": "Config Server",
+              "description": "Server der die Konfigurationdateien speichert.  ",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": false,
