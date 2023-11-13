@@ -6,7 +6,7 @@
     "description": "",
     "id": 0
   },
-  "detail": {
+   "detail": {
     "contributors": [],
     "diagrams": [
       {
@@ -1461,6 +1461,9 @@
               "hasOpenThreats": false
             },
             "id": "4db57a1b-0331-49d8-8333-57473beb6c68",
+            "labels": [
+              "TELCO"
+            ],
             "source": {
               "x": 1945,
               "y": 500
@@ -1486,9 +1489,6 @@
                 "x": 2065,
                 "y": 580
               }
-            ],
-            "labels": [
-              "TELCO"
             ]
           },
           {
@@ -1578,6 +1578,54 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Erhaltene OTT",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "8ec03d99-7aff-41a7-9172-d2d34f853c27",
+            "labels": [
+              "Erhaltene OTT"
+            ],
+            "source": {
+              "cell": "4f1d8de2-7025-4cfe-b523-6c3fd07bed2d"
+            },
+            "target": {
+              "cell": "56faf04b-ea34-4ded-b028-95505285ca7d"
+            },
+            "vertices": [
+              {
+                "x": 1170,
+                "y": 310
+              }
+            ]
+          },
+          {
             "position": {
               "x": -352.9999999999902,
               "y": 436
@@ -1664,8 +1712,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1680,8 +1728,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "31178e86-cdc0-4f26-b6c0-1c473febde19",
+                  "title": "Pharming",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Der Benutzer kann auf eine bösartige Seite geführt werden, welche wie die richtige aussieht, aber von Angreifern ist. Der Benutzer gibt dann seine Login-Daten ein und Angreifer speichern die dann.\nCAPEC-89\nAtt&ck: T1597\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:7\n[E]Exploitability\t:6\n[A]Affected users\t:5\n[D]Discoverability\t:6\nGesamt: 6,6",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
               "privilegeLevel": "",
               "isBidirectional": false,
               "protocol": "",
@@ -1706,8 +1768,8 @@
                 "text": "Standartisierter Login \nSystem + Mobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1718,15 +1780,42 @@
             "data": {
               "type": "tm.Flow",
               "name": "Standartisierter Login \nSystem + Mobile App",
-              "description": "Anstatt benutzung von Eigenentwicklungen wird es Standart-Software eingesetzt, damit man sich selbst nicht in Risiko vom Angriff setzt. ",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "1ff006f2-eb24-41f6-88a7-f49a0e6f04f8",
+                  "title": "TCP Flood",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Duch große Anzahl an TCP Pakete kann der Angreifer den Login-System zu unstabilität bringen, wodurch die normale, nicht angreiffende, Logins abgelehnt werden.\nCAPEC-482 \nAtt&ck: T1498\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:9\n[E]Exploitability\t:6\n[A]Affected users\t:8\n[D]Discoverability\t:5\nGesamt: 7,2",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                },
+                {
+                  "id": "1ab4e166-bc39-4cf8-9730-f8c35a90a55c",
+                  "title": "Try common or default Usernames and Passwords",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Der Angreifer kann durch das Login-System durch try and error herausfinden, welche Emails existieren, oder ob es geht mit default/common Logindaten sich einzuloggen.\nCAPEC-70 \nAtt&ck: T1078\n[D]Damage\t\t\t:7\n[R]Reproducibility\t:8\n[E]Exploitability\t:8\n[A]Affected users\t:5\n[D]Discoverability\t:6\nGesamt: 6,8",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
-              "isEncrypted": true,
+              "isEncrypted": false,
               "isPublicNetwork": false,
               "isALog": false,
               "storesCredentials": false,
@@ -1747,8 +1836,8 @@
                 "text": "Standartisierter\n2FA Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1763,8 +1852,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "e1075a7c-6110-4175-8f0e-4db1825dfdd1",
+                  "title": "Target Programs with elevated Privileges",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Der Angreifer prioriziert die Angriffe auf System mit erhöchten Privilegien, damit er eventuell schafft auf den Systemen bösartige Kommandos auszuführen.\nCAPEC-69\nAtt&ck: T1574\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:6\n[E]Exploitability\t:5\n[A]Affected users\t:8\n[D]Discoverability\t:4\nGesamt: 6,4",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": true,
@@ -1777,7 +1880,7 @@
           {
             "position": {
               "x": 925,
-              "y": 59.999999999999886
+              "y": 60
             },
             "size": {
               "width": 120,
@@ -2111,7 +2214,7 @@
           },
           {
             "position": {
-              "x": 1302.5,
+              "x": 1312.5,
               "y": -180.0000000000001
             },
             "size": {
@@ -2123,8 +2226,8 @@
                 "text": "Management"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2139,8 +2242,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "e7c9bfcd-0f47-40b0-a36b-081b480c7db2",
+                  "title": "Spear Phishing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Der Angreifer macht den klassischen Phishing Angriff, aber der ist nicht auf eine Person, sondern auf die Management-Gruppe.\nCAPEC-163\nAtt&ck: T1598\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:6\n[E]Exploitability\t:7\n[A]Affected users\t:4\n[D]Discoverability\t:6\nGesamt: 6,2",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -2401,8 +2518,8 @@
             },
             "vertices": [
               {
-                "x": 1325,
-                "y": 369.9999999999998
+                "x": 1340,
+                "y": 360
               }
             ]
           },
@@ -2496,7 +2613,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2520,8 +2638,22 @@
               "protocol": "",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "cec193fc-24ed-4735-b88c-d9821b818584",
+                  "title": "Email Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Der Angreifer kann in die wöchentliche Reports sein Inhalt injecten, ohne dass es nachgewiesen werden kann. \nCAPEC-134\nAtt&ck: T1659\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:7\n[E]Exploitability\t:4\n[A]Affected users\t:4\n[D]Discoverability\t:5\nGesamt: 5,6",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ]
             },
             "id": "8b59a335-a69c-496d-85b2-74c9f56ee5d9",
             "labels": [
@@ -2582,6 +2714,10 @@
               "cell": "4f1d8de2-7025-4cfe-b523-6c3fd07bed2d"
             },
             "vertices": [
+              {
+                "x": 1590,
+                "y": 820
+              },
               {
                 "x": 1508.00000000001,
                 "y": 959.9999999999998
@@ -2736,6 +2872,9 @@
               "threats": []
             },
             "id": "bfe0b534-1050-4dd5-89fb-f78c38a25c0f",
+            "labels": [
+              "TELCO des Users"
+            ],
             "source": {
               "x": 1115.00000000001,
               "y": 919.9999999999998
@@ -2761,16 +2900,14 @@
                 "x": 1305.00000000001,
                 "y": 799.9999999999998
               }
-            ],
-            "labels": [
-              "TELCO des Users"
             ]
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2786,7 +2923,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Telefonnummer",
+              "name": "Login",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -2794,8 +2931,22 @@
               "protocol": "HTTPS",
               "isEncrypted": true,
               "isPublicNetwork": true,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "6116bac8-1383-44c9-b477-3b1e9b42e579",
+                  "title": "Adversary in the Browser",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Wenn der Angreifer Schafft den Benutzer einen bösartigen Plugin o.ä. auf sein Gerät zu installieren, dann kann der Angreifer Verkehr zwischen Benutzer und den Login-System lesen. \nCAPEC-662\nAtt&ck: T1557\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:5\n[E]Exploitability         :8\n[A]Affected users\t:3\n[D]Discoverability\t:5\nGesamt: 6",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ]
             },
             "id": "9fc9afbc-1efb-41af-9d82-b216e9e31e7e",
             "labels": [
@@ -2807,7 +2958,12 @@
             "target": {
               "cell": "4f1d8de2-7025-4cfe-b523-6c3fd07bed2d"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 850,
+                "y": 347
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2852,8 +3008,8 @@
             },
             "vertices": [
               {
-                "x": 1135.00000000001,
-                "y": 283.9999999999998
+                "x": 1120,
+                "y": 250.5
               }
             ]
           },
@@ -3048,7 +3204,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -3072,8 +3229,22 @@
               "protocol": "AES",
               "isEncrypted": true,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "2b8a3b5f-e079-4a9e-8be7-625ddd78cb57",
+                  "title": "Man in the Middle",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Der Angreifer kann die Kommunikation zwischen die beide abfangen und mitanalysieren. Obwohl es mit den AES verschlüsselt ist, könnte der Angreifer durch erhaltung vom statischen Schlüssel von einen der Glieder die kommunekation komplett mithören.\nCAPEC-94\nAtt&ck: T1557\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:5\n[E]Exploitability\t:8\n[A]Affected users\t:3\n[D]Discoverability\t:5\nGesamt: 6",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                }
+              ]
             },
             "id": "091513d6-dd54-4075-9baf-ecadc71ffd60",
             "labels": [
@@ -3087,8 +3258,12 @@
             },
             "vertices": [
               {
-                "x": 1670,
-                "y": 230
+                "x": 1680,
+                "y": 200
+              },
+              {
+                "x": 1620,
+                "y": 200
               }
             ]
           },
@@ -3197,8 +3372,8 @@
                 "text": "Email \nService"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3213,8 +3388,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "de8056c2-d2d5-4427-9a47-9eb1d9933928",
+                  "title": "HTTP DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Der Angreifer sendet eine große Mange an Emails an den Email Server, sodass er nicht mehr funktioniert.\nCAPEC-469\nAtt&ck: T1498\n[D]Damage\t\t\t:5\n[R]Reproducibility\t:7\n[E]Exploitability\t:7\n[A]Affected users\t:6\n[D]Discoverability\t:9\nGesamt: 6,8",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": true,
@@ -3309,8 +3498,8 @@
           },
           {
             "position": {
-              "x": 1080,
-              "y": 409.9999999999999
+              "x": 1088.00000000001,
+              "y": 420
             },
             "size": {
               "width": 120,
@@ -3321,11 +3510,13 @@
                 "text": "Config Server"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3343,8 +3534,22 @@
               "storesCredentials": false,
               "isEncrypted": true,
               "isSigned": false,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "b6b41a08-b344-4fb5-bcf3-aab112a4e5d9",
+                  "title": "Data Injected during Configuration",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Der Angreifer injected eine geänderte Konfiguration in der Config Server, sodass der Server etwas anderes macht, was den Angreifer profitiert.\nCAPEC-536\nAtt&ck: T1659\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:5\n[E]Exploitability\t:6\n[A]Affected users\t:7\n[D]Discoverability\t:5\nGesamt: 6,4",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isPublicNetwork": false
@@ -3356,6 +3561,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 17
+    "threatTop": 27
   }
 }
