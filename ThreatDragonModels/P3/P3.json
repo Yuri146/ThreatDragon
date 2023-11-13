@@ -1609,6 +1609,9 @@
               "threats": []
             },
             "id": "8ec03d99-7aff-41a7-9172-d2d34f853c27",
+            "labels": [
+              "Erhaltene OTT"
+            ],
             "source": {
               "cell": "4f1d8de2-7025-4cfe-b523-6c3fd07bed2d"
             },
@@ -1620,9 +1623,6 @@
                 "x": 1170,
                 "y": 310
               }
-            ],
-            "labels": [
-              "Erhaltene OTT"
             ]
           },
           {
@@ -1736,7 +1736,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Der Benutzer kann auf eine bösartige Seite geführt werden, welche wie die richtige aussieht, aber von Angreifern ist. Der Benutzer gibt dann seine Login-Daten ein und Angreifer speichern die dann.\nCAPEC-89\nAtt&ck: T1597\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Benutzer kann auf eine bösartige Seite geführt werden, welche wie die richtige aussieht, aber von Angreifern ist. Der Benutzer gibt dann seine Login-Daten ein und Angreifer speichern die dann.\nCAPEC-89\nAtt&ck: T1597\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:7\n[E]Exploitability\t:6\n[A]Affected users\t:5\n[D]Discoverability\t:6\nGesamt: 6,6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1792,7 +1792,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Duch große Anzahl an TCP Pakete kann der Angreifer den Login-System zu unstabilität bringen, wodurch die normale, nicht angreiffende, Logins abgelehnt werden.\nCAPEC-482 \nAtt&ck: T1498\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Duch große Anzahl an TCP Pakete kann der Angreifer den Login-System zu unstabilität bringen, wodurch die normale, nicht angreiffende, Logins abgelehnt werden.\nCAPEC-482 \nAtt&ck: T1498\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:9\n[E]Exploitability\t:6\n[A]Affected users\t:8\n[D]Discoverability\t:5\nGesamt: 7,2",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1805,7 +1805,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Der Angreifer kann durch das Login-System durch try and error herausfinden, welche Emails existieren, oder ob es geht mit default/common Logindaten sich einzuloggen.\nCAPEC-70 \nAtt&ck: T1078\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Angreifer kann durch das Login-System durch try and error herausfinden, welche Emails existieren, oder ob es geht mit default/common Logindaten sich einzuloggen.\nCAPEC-70 \nAtt&ck: T1078\n[D]Damage\t\t\t:7\n[R]Reproducibility\t:8\n[E]Exploitability\t:8\n[A]Affected users\t:5\n[D]Discoverability\t:6\nGesamt: 6,8",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1856,11 +1856,11 @@
               "threats": [
                 {
                   "id": "e1075a7c-6110-4175-8f0e-4db1825dfdd1",
-                  "title": "Targer Programs with elevated Privileges",
+                  "title": "Target Programs with elevated Privileges",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "Der Angreifer prioriziert die Angriffe auf System mit erhöchten Privilegien, damit er eventuell schafft auf den Systemen bösartige Kommandos auszuführen.\nCAPEC-69\nAtt&ck: T1574\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Angreifer prioriziert die Angriffe auf System mit erhöchten Privilegien, damit er eventuell schafft auf den Systemen bösartige Kommandos auszuführen.\nCAPEC-69\nAtt&ck: T1574\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:6\n[E]Exploitability\t:5\n[A]Affected users\t:8\n[D]Discoverability\t:4\nGesamt: 6,4",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -2250,7 +2250,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Der Angreifer macht den klassischen Phishing Angriff, aber der ist nicht auf eine Person, sondern auf die Management-Gruppe.\nCAPEC-163\nAtt&ck: T1598\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Angreifer macht den klassischen Phishing Angriff, aber der ist nicht auf eine Person, sondern auf die Management-Gruppe.\nCAPEC-163\nAtt&ck: T1598\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:6\n[E]Exploitability\t:7\n[A]Affected users\t:4\n[D]Discoverability\t:6\nGesamt: 6,2",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -2646,7 +2646,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Der Angreifer kann in die wöchentliche Reports sein Inhalt injecten, ohne dass es nachgewiesen werden kann. \nCAPEC-134\nAtt&ck: T1659\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Angreifer kann in die wöchentliche Reports sein Inhalt injecten, ohne dass es nachgewiesen werden kann. \nCAPEC-134\nAtt&ck: T1659\n[D]Damage\t\t\t:8\n[R]Reproducibility\t:7\n[E]Exploitability\t:4\n[A]Affected users\t:4\n[D]Discoverability\t:5\nGesamt: 5,6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -2939,7 +2939,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Wenn der Angreifer Schafft den Benutzer einen bösartigen Plugin o.ä. auf sein Gerät zu installieren, dann kann der Angreifer Verkehr zwischen Benutzer und den Login-System lesen. \nCAPEC-662\nAtt&ck: T1557\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Wenn der Angreifer Schafft den Benutzer einen bösartigen Plugin o.ä. auf sein Gerät zu installieren, dann kann der Angreifer Verkehr zwischen Benutzer und den Login-System lesen. \nCAPEC-662\nAtt&ck: T1557\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:5\n[E]Exploitability         :8\n[A]Affected users\t:3\n[D]Discoverability\t:5\nGesamt: 6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -3237,7 +3237,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Der Angreifer kann die Kommunikation zwischen die beide abfangen und mitanalysieren. Obwohl es mit den AES verschlüsselt ist, könnte der Angreifer durch erhaltung vom statischen Schlüssel von einen der Glieder die kommunekation komplett mithören.\nCAPEC-94\nAtt&ck: T1557\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Angreifer kann die Kommunikation zwischen die beide abfangen und mitanalysieren. Obwohl es mit den AES verschlüsselt ist, könnte der Angreifer durch erhaltung vom statischen Schlüssel von einen der Glieder die kommunekation komplett mithören.\nCAPEC-94\nAtt&ck: T1557\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:5\n[E]Exploitability\t:8\n[A]Affected users\t:3\n[D]Discoverability\t:5\nGesamt: 6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -3396,7 +3396,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Der Angreifer sendet eine große Mange an Emails an den Email Server, sodass er nicht mehr funktioniert.\nCAPEC-469\nAtt&ck: T1498\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Angreifer sendet eine große Mange an Emails an den Email Server, sodass er nicht mehr funktioniert.\nCAPEC-469\nAtt&ck: T1498\n[D]Damage\t\t\t:5\n[R]Reproducibility\t:7\n[E]Exploitability\t:7\n[A]Affected users\t:6\n[D]Discoverability\t:9\nGesamt: 6,8",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -3542,7 +3542,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Der Angreifer injected eine geänderte Konfiguration in der Config Server, sodass der Server etwas anderes macht, was den Angreifer profitiert.\nCAPEC-536\nAtt&ck: T1659\n[D]Damage\t\t\t:X\n[R]Reproducibility\t:X\n[E]Exploitability\t        :X\n[A]Affected users\t:X\n[D]Discoverability\t:X\nGesamt: X",
+                  "description": "Der Angreifer injected eine geänderte Konfiguration in der Config Server, sodass der Server etwas anderes macht, was den Angreifer profitiert.\nCAPEC-536\nAtt&ck: T1659\n[D]Damage\t\t\t:9\n[R]Reproducibility\t:5\n[E]Exploitability\t:6\n[A]Affected users\t:7\n[D]Discoverability\t:5\nGesamt: 6,4",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
