@@ -305,7 +305,7 @@
             "zIndex": 74,
             "id": "1c06e73e-ef54-4b6c-88a6-8d9031d99f00",
             "data": {
-              "type": "tm.Flow",
+              "type": "tm.Actor",
               "name": "User",
               "description": "",
               "outOfScope": false,
@@ -319,7 +319,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": ">Der Benutzer kann auf eine bösartige Seite geführt werden, welche wie die richtige aussieht, aber von Angreifern ist. Der Benutzer gibt dann seine Login-Daten ein und Angreifer speichern die dann.\n>CAPEC-89 (stand 13.11.2023)\n>Att&ck: T1598 (stand 13.11.2023)\n==============================================================================\n[D]Damage: 8\n[R]Reproducibility: 7\n[E]Exploitability: 6\n[A]Affected users: 5\n[D]Discoverability: 6\nGesamt: 6,6\n==============================================================================\n>Gegenmaßnahme: Anti-Phishing Trainings für Benutzer/Mitarbeiter durchführen underklären, was falsch gemacht wurde und worauf die achten sollen.\n>Technische/Organisatorische Umsetzung: Das Unternehmen muss eine Phishing-Training organisieren. Den Benutzern/Mitarbeitern wird dann eine Email zugesendet mit \"Fake\"-Phishing Seite, die das Uternehmen selbst gemacht hat/ähnlicher Service gekauft hat, und wenn die Benutzer auf den Link weitergehen, wird die dann erklärt, dass die von Phishing aggegriffen wären und worauf man achten muss.\n>Bewertung von Risikoreduktion: [E] und [A] werden gesinkt, weil es weniger Buntzer auf die Angriffe geraten.\n[D]Damage: 8\n[R]Reproducibility: 7\n[E]Exploitability\t: 3\n[A]Affected users: 2\n[D]Discoverability: 6\nGesamt: 5,2\n>D3FEND-ID: (keine) (stand 13.11.2023)\n>Anforderung aus OWASP ASVS: (keine gefunden)\n>Anforderung aus OWASP MASVS: (keine gefunden)",
+                  "description": ">Der Benutzer kann auf eine bösartige Seite geführt werden, welche wie die richtige aussieht, aber von Angreifern ist. Der Benutzer gibt dann seine Login-Daten ein und Angreifer speichern die dann.\n>CAPEC-89 (stand 13.11.2023)\n>Att&ck: T1598 (stand 13.11.2023)\n==============================================================================\n[D]Damage: 8\n[R]Reproducibility: 7\n[E]Exploitability: 6\n[A]Affected users: 5\n[D]Discoverability: 6\nGesamt: 6,6\n==============================================================================\n>Gegenmaßnahme: Anti-Phishing Trainings für Benutzer/Mitarbeiter durchführen und erklären, was falsch gemacht wurde und worauf die achten sollen.\n>Technische/Organisatorische Umsetzung: Das Unternehmen muss eine Phishing-Training organisieren. Den Benutzern/Mitarbeitern wird dann eine Email zugesendet mit \"Fake\"-Phishing Seite, die das Uternehmen selbst gemacht hat/ähnlicher Service gekauft hat, und wenn die Benutzer auf den Link weitergehen, wird die dann erklärt, dass die von Phishing aggegriffen wären und worauf man achten muss.\n>Bewertung von Risikoreduktion: [E] und [A] werden gesinkt, weil es weniger Buntzer auf die Angriffe geraten.\n[D]Damage: 8\n[R]Reproducibility: 7\n[E]Exploitability\t: 3\n[A]Affected users: 2\n[D]Discoverability: 6\nGesamt: 5,2\n>D3FEND-ID: (keine) (stand 13.11.2023)\n>Anforderung aus OWASP ASVS: (keine gefunden)\n>Anforderung aus OWASP MASVS: (keine gefunden)",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -361,7 +361,7 @@
             "zIndex": 75,
             "id": "4f1d8de2-7025-4cfe-b523-6c3fd07bed2d",
             "data": {
-              "type": "tm.Flow",
+              "type": "tm.Process",
               "name": "Standartisierter Login \nSystem + Mobile App",
               "description": "",
               "outOfScope": false,
@@ -429,7 +429,7 @@
             "zIndex": 76,
             "id": "56faf04b-ea34-4ded-b028-95505285ca7d",
             "data": {
-              "type": "tm.Flow",
+              "type": "tm.Process",
               "name": "Standartisierter\n2FA Service",
               "description": "",
               "outOfScope": false,
@@ -441,7 +441,7 @@
                   "id": "e1075a7c-6110-4175-8f0e-4db1825dfdd1",
                   "title": "Target Programs with elevated Privileges",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Elevation of privilege",
                   "description": ">Der Angreifer prioriziert die Angriffe auf System mit erhöchten Privilegien, damit er eventuell schafft auf den Systemen bösartige Kommandos auszuführen.\n>CAPEC-69\n>Att&ck: T1574\n==============================================================================\n[D]Damage: 9\n[R]Reproducibility: 4\n[E]Exploitability: 5\n[A]Affected users: 8\n[D]Discoverability: 4\nGesamt: 6\n==============================================================================\n>Gegenmaßnahme: Man kann den Zugriff auf Authentifizierungs-Datnbanken, Konfigurationen, Systemlogs überwachen, um die Änderungen zu betrachten und nachvollziehen, ob das ein Angreifer war oder nicht.\n>Technische/Organisatorische Umsetzung: Jemand aus dem Unternehmen muss sich REGELMÄßIG  hinsetzen und die Logs nachlesen, was da gemacht wurde und wer es gemacht hat. \n>Bewertung von Risikoreduktion: [D] sinkt, weil die Administratoren den Angreifffer (hoffentlich) frühzeitig erkennen und den Schaden rückgängi machen. [R] sinkr auch, weil wenn der Angreifer entdeckt wird, werden die Previlegien abgeschaltet.\n[D]Damage: 6\n[R]Reproducibility: 3\n[E]Exploitability: 5\n[A]Affected users: 8\n[D]Discoverability: 4\nGesamt: 5.2\n>D3FEND-ID: D3-SFA\n>Anforderung aus OWASP ASVS: (keine gefunden)\n>Anforderung aus OWASP MASVS: (keine gefunden)",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
@@ -819,7 +819,7 @@
             "zIndex": 85,
             "id": "4a8dd257-5593-4352-af6f-5fe2972916e7",
             "data": {
-              "type": "tm.Flow",
+              "type": "tm.Actor",
               "name": "Management",
               "description": "Management Team, das die Report-Daten analysiert und weitere Bedrohungen im Export Prozess modelliert.",
               "outOfScope": false,
@@ -1965,7 +1965,7 @@
             "zIndex": 109,
             "id": "d4ed4b6f-ddba-4c61-8fba-561a62b06699",
             "data": {
-              "type": "tm.Flow",
+              "type": "tm.Process",
               "name": "Email \nService",
               "description": "Öffentlicher Email Dienst von Allsecure",
               "outOfScope": false,
@@ -2108,7 +2108,7 @@
             "zIndex": 112,
             "id": "64ef6c05-0c5d-41ba-bada-0907af1f0fe2",
             "data": {
-              "type": "tm.Flow",
+              "type": "tm.Store",
               "name": "Config Server",
               "description": "Server der die Konfigurationdateien \n und Schlüsseln speichert.  ",
               "outOfScope": false,
